@@ -1,8 +1,7 @@
-import React from "react";
 
 function About() {
     return (
-        <div>
+        <div className="container">
             <h1>Om mig</h1>
             <p>
                 Jag pluggar och testar lite react.

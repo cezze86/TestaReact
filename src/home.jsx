@@ -1,8 +1,8 @@
-import React from "react";
+import "./app.css";
 
 function Home() {
     return (
-        <div style={{textAlign: 'center', marginTop:'20px'}}>
+        <div className="container">
             <h1>TestaReact</h1>
             <p>Testar lite React</p>
             <button onClick={() => alert('Tittut')}>Se vad som händer om du klickar här!</button>
