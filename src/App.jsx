@@ -1,12 +1,22 @@
-import "react";
+import React from "react";
+import {BrowserRouter as Router, Routes,Route,Link} from "react-router-dom";
+import Home from "./Home";
+import About from "./about.jsx";
 
 function App() {
     return (
-        <div style={{textAlign: 'center', marginTop:'20px'}}>
-            <h1>Hej TestaReact</h1>
-            <p>Testar lite React</p>
-        <button onClick={() => alert('Tittut')}>Se vad som händer om du klickar här!</button>
-        </div>
+        <Router>
+            <div style={{textAlign: 'center', marginTop:'20px'}}>
+                <nav style={{marginBottom:'20px'}}>
+                    <Link to="/" style={{marginRight:'10px'}}>Hem</Link>
+                    <Link to="/om mig" style={{margin: "0 10px"}}>Om mig</Link>
+                </nav>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/Om mig" element={<About />} />
+                </Routes>
+            </div>
+        </Router>
     );
 }
 
