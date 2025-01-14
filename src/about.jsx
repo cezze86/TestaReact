@@ -1,3 +1,4 @@
+import Alertbutton from "./alertbutton.jsx";
 
 function About() {
     return (
@@ -7,6 +8,11 @@ function About() {
                 Jag pluggar och testar lite react.
 
             </p>
+            <Alertbutton>
+
+            </Alertbutton>
+
+
         </div>
     );
 }

@@ -12,6 +12,17 @@
     transition: filter 300ms;
 }
 
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark{
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
 .logo:hover {
     filter: drop-shadow(0 0 2em #646cffaa);
 }
